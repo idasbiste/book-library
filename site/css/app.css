@@ -45,13 +45,12 @@ body {
 
 #addBook button {
     display: block;
-    margin: 5px 20px 10px 10px;
     float: right;
     clear: both;
 }
 
 #addBook div {
-    width: 550px;
+    width: 566px;
 }
 
 #addBook div:after {
