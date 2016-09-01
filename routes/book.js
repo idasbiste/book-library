@@ -18,7 +18,8 @@ router.post("/", function (req, res) {
     var book = new Book({
         title: req.body.title,
         author: req.body.author,
-        releaseDate: req.body.releaseDate
+        releaseDate: req.body.releaseDate,
+        keywords: req.body.keywords
     });
     
     book.save(function (err) {
@@ -53,6 +54,7 @@ router.put("/:id", function (req, res) {
         book.title = req.body.title;
         book.author = req.body.author;
         book.releaseDate = req.body.releaseDate;
+        book.keywords = req.body.keywords;
         
         book.save(function (err) {
             if (!err) {
