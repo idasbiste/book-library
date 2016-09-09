@@ -7,7 +7,7 @@ var keywordsSchema = new mongoose.Schema({
 var bookSchema = new mongoose.Schema({
     title: String,
     author: String,
-    releaseDate: Date
+    releaseDate: Date,
     keywords: [ keywordsSchema ]
 });
 
