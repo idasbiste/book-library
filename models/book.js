@@ -7,8 +7,8 @@ var keywordsSchema = new mongoose.Schema({
 var bookSchema = new mongoose.Schema({
     title: String,
     author: String,
-    releaseDate: Date
-    keywords = [ keywordsSchema ]
+    releaseDate: Date,
+    keywords: [ keywordsSchema ]
 });
 
 module.exports = mongoose.model("Book", bookSchema);
