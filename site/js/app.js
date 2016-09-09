@@ -14,6 +14,11 @@ $(function() {
         { title: 'Eloquent JavaScript', author: 'Marijn Haverbeke', releaseDate: '2011', keywords: 'JavaScript Programming' }
     ];
 
+<<<<<<< Updated upstream
     new app.LibraryView(books);
+=======
+    $('#releaseDate').datepicker();
+    new app.LibraryView();
+>>>>>>> Stashed changes
     
 });
